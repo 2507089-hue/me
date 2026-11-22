@@ -4,6 +4,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AMBITIOUS — Ambrose Onyango</title>
+<meta name="description" content="Ambrose Onyango, software developer and the mind behind AMBITIOUS. Building ideas into real-world software, including LUX EMPIRE and JAN Poultry.">
+<meta name="theme-color" content="#0B1020">
+<link rel="canonical" href="https://ambitious.luxempire.co.ke/">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AMBITIOUS">
+<meta property="og:title" content="AMBITIOUS | Ambrose Onyango">
+<meta property="og:description" content="Ambrose Onyango, software developer and the mind behind AMBITIOUS. Building ideas into real-world software, including LUX EMPIRE and JAN Poultry.">
+<meta property="og:url" content="https://ambitious.luxempire.co.ke/">
+<meta property="og:image" content="https://ambitious.luxempire.co.ke/og-image.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AMBITIOUS logo, Ambrose Onyango">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AMBITIOUS | Ambrose Onyango">
+<meta name="twitter:description" content="Ambrose Onyango, software developer and the mind behind AMBITIOUS. Building ideas into real-world software, including LUX EMPIRE and JAN Poultry.">
+<meta name="twitter:image" content="https://ambitious.luxempire.co.ke/og-image.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230B1020'/%3E%3Cpath d='M8 32 20 7l12 25M13.5 24h13' stroke='%23D4AF37' stroke-width='3' fill='none'/%3E%3Cpath d='M22 15l8-8' stroke='%23D4AF37' stroke-width='3'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap">
 <style>
@@ -72,6 +90,10 @@ nav.open{display:flex}nav a{padding:14px 0}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .soc{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 16px}.soc a{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid var(--bd);background:var(--sf);text-decoration:none;border-radius:8px;font-weight:500;transition:.2s}.soc a:hover{transform:translateY(-2px);box-shadow:var(--sh);border-color:var(--gd)}.soc svg{width:22px;height:22px;flex:none}.soc.sm a{padding:6px 12px;font-size:.9rem}.soc.sm svg{width:18px;height:18px}
+.avatar{position:relative;display:block;width:96px;height:96px;border-radius:50%;border:2px solid var(--gd);box-shadow:var(--sh);margin:0 0 20px;cursor:pointer}
+.avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.avatar:after{content:attr(data-name);position:absolute;left:0;top:calc(100% + 10px);background:var(--sf);color:var(--tx);border:1px solid var(--bd);padding:4px 10px;border-radius:6px;white-space:nowrap;font-size:.85rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:5}
+.avatar:hover:after,.avatar:focus:after{opacity:1}
 </style>
 </head>
 <body>
@@ -90,6 +112,7 @@ nav.open{display:flex}nav a{padding:14px 0}
 <!-- HOME -->
 <section class="pg" id="p-home">
 <div class="hero"><div>
+<span class="avatar" tabindex="0" role="img" aria-label="Ambrose Onyango" data-name="Ambrose Onyango"><img src="avatar.jpg" alt="Ambrose Onyango" width="96" height="96"></span>
 <div class="live mono"><span class="dot"></span>LUX EMPIRE: live in production</div>
 <h1>I'm Ambrose Onyango.<br>I Build Software With Purpose.</h1>
 <p>Software developer, product builder, and the mind behind AMBITIOUS. I turn ideas into functional digital experiences, from production-ready web platforms to ambitious projects still taking shape.</p>
@@ -129,11 +152,11 @@ nav.open{display:flex}nav a{padding:14px 0}
 <div class="tags mono"><span>PHP</span><span>MariaDB</span><span>M-PESA</span><span>Auth</span></div>
 <p class="mono">luxempire.co.ke</p>
 <div class="row" style="margin-top:0"><a class="btn pr" href="https://luxempire.co.ke/" target="_blank" rel="noopener">Visit live website</a><a class="btn" href="#lux">Read case study</a></div></article>
-<article class="card"><span class="badge mono">IN DEVELOPMENT</span>
+<article class="card"><span class="badge mono">LIVE IN PRODUCTION</span>
 <h3 style="margin-top:16px">JAN Poultry</h3>
-<p>A poultry-focused website and e-commerce application for product discovery and online purchasing. Not yet publicly deployed.</p>
+<p>A poultry-focused website and e-commerce application for product discovery and online purchasing. Live at janpoultry.luxempire.co.ke.</p>
 <div class="tags mono"><span>PHP</span><span>Cart &amp; checkout</span><span>Admin</span><span>Orders</span></div>
-<div class="row" style="margin-top:0"><button class="btn pr" data-open="jm">Explore project</button><a class="btn" href="#jan">Read case study</a></div></article>
+<div class="row" style="margin-top:0"><a class="btn pr" href="https://janpoultry.luxempire.co.ke" target="_blank" rel="noopener">Visit live website</a><button class="btn" data-open="jm">Preview</button><a class="btn" href="#jan">Read case study</a></div></article>
 </div>
 <p class="mono" style="margin-top:32px">More projects will be added here as they ship.</p>
 </section>
@@ -165,20 +188,20 @@ nav.open{display:flex}nav a{padding:14px 0}
 <!-- JAN -->
 <section class="pg" id="p-jan">
 <div class="jan">
-<span class="badge mono">IN DEVELOPMENT</span>
+<span class="badge mono">LIVE IN PRODUCTION</span>
 <h1 style="margin-top:16px">JAN Poultry</h1>
-<p>A poultry website and e-commerce application, separate from LUX EMPIRE. It is not publicly deployed, so there is no live link.</p>
-<div class="row" style="margin-top:0"><button class="btn" data-open="jm">View project preview</button></div>
-<div class="frame" style="margin-top:32px"><div class="top"><i></i><i></i><i></i><span class="mono">Local development build</span></div><img data-shot2 alt="JAN Poultry products page with recently added poultry products" style="display:block;width:100%;height:auto"></div>
+<p>A poultry website and e-commerce application, separate from LUX EMPIRE. It is now live at <a href="https://janpoultry.luxempire.co.ke" target="_blank" rel="noopener">janpoultry.luxempire.co.ke</a>.</p>
+<div class="row" style="margin-top:0"><a class="btn pr" href="https://janpoultry.luxempire.co.ke" target="_blank" rel="noopener">Visit live website</a><button class="btn" data-open="jm">View project preview</button></div>
+<div class="frame" style="margin-top:32px"><div class="top"><i></i><i></i><i></i><span class="mono">janpoultry.luxempire.co.ke</span></div><img data-shot2 alt="JAN Poultry products page with recently added poultry products" style="display:block;width:100%;height:auto"></div>
 <div class="rule"></div>
-<h2>Existing in the codebase</h2>
+<h2>What it includes</h2>
 <div class="grid3">
 <div class="card"><h3>Shopping</h3><p>Product browsing, cart, checkout, receipt generation.</p></div>
 <div class="card"><h3>Customers</h3><p>Authentication, profiles, notifications, password recovery.</p></div>
 <div class="card"><h3>Admin</h3><p>Dashboards, product create and edit, inventory-related management, orders and order status.</p></div></div>
 <h2 style="margin-top:40px">Architecture</h2>
 <div class="arch"><div><b>Controllers</b>Request handling</div><div><b>Models</b>Data access</div><div><b>Services</b>Business logic</div><div><b>Helpers &amp; config</b>Shared utilities</div><div><b>Uploads</b>Product images and videos</div></div>
-<p>These workflows are in development. They are not claimed to be production-ready, fully tested, or used by customers.</p>
+<p>The site is live and still being improved. Features keep getting tested and refined as real use shows what needs work.</p>
 </div></section>
 
 <!-- ENGINEERING -->
@@ -215,9 +238,9 @@ nav.open{display:flex}nav a{padding:14px 0}
 <footer><div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px"><span>© 2026 Ambrose Onyango · AMBITIOUS</span><div class="soc sm"><a href="mailto:ambitious754@gmail.com"><svg aria-hidden="true"><use href="#i-gm"/></svg>Gmail</a><a href="https://github.com/2507089-hue" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-gh"/></svg>GitHub</a><a href="https://www.linkedin.com/in/ambitious-gee-953020381" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-li"/></svg>LinkedIn</a></div><span class="mono">Ambition in Vision. Precision in Execution.</span></div></footer>
 
 <dialog id="jm" aria-labelledby="jt"><button class="ib x" data-close aria-label="Close">✕</button>
-<span class="badge mono">IN DEVELOPMENT</span><h2 id="jt" style="margin-top:14px">JAN Poultry</h2>
-<p>A PHP e-commerce application for poultry product discovery and online purchasing. Not publicly deployed yet.</p>
-<img data-shot2 alt="JAN Poultry products page showing recently added poultry products with Available labels and category tags" style="display:block;width:100%;height:auto;border:1px solid var(--bd)"><p class="mono" style="margin-top:8px">Screenshot of the development build running locally. Not publicly deployed.</p>
+<span class="badge mono">LIVE IN PRODUCTION</span><h2 id="jt" style="margin-top:14px">JAN Poultry</h2>
+<p>A PHP e-commerce application for poultry product discovery and online purchasing. Live at janpoultry.luxempire.co.ke.</p>
+<img data-shot2 alt="JAN Poultry products page showing recently added poultry products with Available labels and category tags" style="display:block;width:100%;height:auto;border:1px solid var(--bd)"><p class="mono" style="margin-top:8px">Screenshot of JAN Poultry.</p>
 <p style="margin-top:16px">Codebase includes: product management, cart and checkout, customer accounts, order workflows, admin dashboards, receipts, product media uploads, and a controller/model/service structure.</p></dialog>
 
 <dialog id="lb" aria-label="LUX EMPIRE screenshot" style="max-width:96vw;padding:44px 12px 12px"><button class="ib x" data-close aria-label="Close">✕</button><img data-shot alt="LUX EMPIRE home page, enlarged" style="display:block;width:100%;height:auto"></dialog>
